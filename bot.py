@@ -86,6 +86,7 @@ class Email_bot:
         self.server.login(self.headers['From'], self.settings['password'])
 
     def message_sender(self, recipient):
+        self.headers['From']="Agree's for Pets <{}>".format(self.settings['email'])
         self.headers['To'] = recipient
         msg = ''
         for key, value in self.headers.items():

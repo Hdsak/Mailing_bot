@@ -1,5 +1,5 @@
-romkakatomka93@mail.ru
-kazan2012
-smtp.mail.ru
+mail@agrees.ru
+gmbh5581
+smtp.agrees.ru
 587
 agrees
