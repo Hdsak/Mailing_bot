@@ -37,7 +37,7 @@ def get_clients(store_name):
 
 
 def email_content_former(store_name):
-    with open('mails/letter_{}.html'.format(store_name), 'r',encoding='utf-8') as html_mail:
+    with open('mails/letter_{}.html'.format(store_name), 'r', encoding='utf-8') as html_mail:
         mail = html_mail.read()
     return mail
 
@@ -86,7 +86,7 @@ class Email_bot:
         self.server.login(self.headers['From'], self.settings['password'])
 
     def message_sender(self, recipient):
-        self.headers['From']="Agree's for Pets <{}>".format(self.settings['email'])
+        self.headers['From'] = "Agree's for Pets <{}>".format(self.settings['email'])
         self.headers['To'] = recipient
         msg = ''
         for key, value in self.headers.items():
@@ -111,7 +111,7 @@ class Email_bot:
 
 
 def start():
-    print("Hi that is email spamming bot")
+    print("Hi, this is email spamming bot")
     while 1:
         bot = Email_bot()
         print("Start logging...")
